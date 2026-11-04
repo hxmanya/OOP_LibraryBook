@@ -1,0 +1,317 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="workflows" name="UML Workflows">
+    <mxGraphModel dx="2943" dy="1737" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1627" pageHeight="1802" background="light-dark(#FFFFFF,#FFFFFF)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=20;fontColor=light-dark(#000000,#000000);" value="LibraryBook SIW1&lt;br&gt;Service workflows and persistence" vertex="1">
+          <mxGeometry height="48" width="1547.5" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryApplication" parent="1" style="group;fillColor=#6a00ff;strokeColor=light-dark(#3700CC,#000000);fontColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="245.0016" width="220.9968" x="758.0016" y="91.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryApplication-part-0" parent="LibraryApplication" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=center;verticalAlign=middle;fillColor=light-dark(#E9EDF2,#E9EDF2);fontStyle=1;" value="&lt;b&gt;LibraryApplication&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.2224" width="220.9968" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryApplication-part-1" parent="LibraryApplication" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;- library : Library&lt;br&gt;- service : LibraryService&lt;br&gt;- store : LibraryCsvStore&lt;br&gt;- input : Scanner&lt;/div&gt;" vertex="1">
+          <mxGeometry height="108.8896" width="220.9968" y="27.2224" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryApplication-part-2" parent="LibraryApplication" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;div&gt;+ main(args) : void&lt;/div&gt;&lt;div&gt;- readerMenu(reader) : void&lt;/div&gt;&lt;div&gt;- staffMenu(staff) : void&lt;/div&gt;&lt;div&gt;+ criteriaCheck(library) : void&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="108.8896" width="220.9968" y="136.112" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryService" parent="1" style="group;strokeColor=light-dark(#000000,#000000);" value="" vertex="1">
+          <mxGeometry height="272.0016" width="407.0016" x="39.9992" y="405.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryService-part-0" parent="LibraryService" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=center;verticalAlign=middle;fillColor=light-dark(#E9EDF2,#E9EDF2);fontStyle=1;" value="&lt;b&gt;LibraryService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="22" width="407" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryService-part-1" parent="LibraryService" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="+ MAX_HOME_LOANS : int = 3" vertex="1">
+          <mxGeometry height="34.8" width="407" y="19.6" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryService-part-2" parent="LibraryService" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 170%;&quot;&gt;+ submitRequest(library, reader, id) : String&lt;br&gt;+ processRequest(library, staff) : String&lt;br&gt;+ scheduleTask(library, staff, task) : void&lt;br&gt;+ processTask(library, staff) : String&lt;br&gt;+ addBook / updateBook / removeBook&lt;br&gt;+ updateReader / removeReader&lt;br&gt;+ renewOwnLoan(library, reader, id) : boolean&lt;br&gt;+ sortedBooks(library, comparator) : List&amp;lt;LibraryBook&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="217.60128" width="407.0016" y="54.40032" as="geometry" />
+        </mxCell>
+        <mxCell id="Library" parent="1" style="group;" value="" vertex="1">
+          <mxGeometry height="218.0016" width="299.0016" x="491.9992" y="746.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="Library-part-0" parent="Library" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=center;verticalAlign=middle;fillColor=light-dark(#E9EDF2,#E9EDF2);fontStyle=1;" value="&lt;b&gt;Library&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.250200000000003" width="299.0016" as="geometry" />
+        </mxCell>
+        <mxCell id="Library-part-1" parent="Library" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 180%;&quot;&gt;- books : List&amp;lt;LibraryBook&amp;gt;&lt;br&gt;- booksById : Map&amp;lt;String, LibraryBook&amp;gt;&lt;br&gt;- readersById : Map&amp;lt;String, Reader&amp;gt;&lt;br&gt;- staffById : Map&amp;lt;String, Librarian&amp;gt;&lt;br&gt;- activityLog : ActivityLog&lt;br&gt;- borrowRequests : BorrowRequestQueue&lt;br&gt;- taskDispatcher : PriorityTaskDispatcher&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190.75140000000002" width="299.0016" y="27.250200000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="BorrowRequestQueue" parent="1" style="group;" value="" vertex="1">
+          <mxGeometry height="191.0016" width="362.0016" x="261.4992" y="1047.4992" as="geometry" />
+        </mxCell>
+        <mxCell id="BorrowRequestQueue-part-0" parent="BorrowRequestQueue" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=center;verticalAlign=middle;fillColor=light-dark(#E9EDF2,#E9EDF2);fontStyle=1;" value="&lt;b&gt;BorrowRequestQueue&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.28594285714286" width="362.0016" as="geometry" />
+        </mxCell>
+        <mxCell id="BorrowRequestQueue-part-1" parent="BorrowRequestQueue" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="- requests : Queue&amp;lt;BorrowRequest&amp;gt; = LinkedList&lt;br&gt;- pending : Set&amp;lt;BorrowRequest&amp;gt; = HashSet" vertex="1">
+          <mxGeometry height="54.57188571428572" width="362.0016" y="27.28594285714286" as="geometry" />
+        </mxCell>
+        <mxCell id="BorrowRequestQueue-part-2" parent="BorrowRequestQueue" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;+ offer(request) : void&lt;br&gt;+ processNext(library, service) : String&lt;br&gt;+ cancelForBook(id) : int&lt;br&gt;+ cancelForReader(id) : int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="109.14377142857144" width="362.0016" y="81.85782857142858" as="geometry" />
+        </mxCell>
+        <mxCell id="BorrowRequest" parent="1" style="group;" value="" vertex="1">
+          <mxGeometry height="164.0016" width="238.9968" x="323.0016" y="1320.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="BorrowRequest-part-0" parent="BorrowRequest" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=center;verticalAlign=middle;fillColor=light-dark(#E9EDF2,#E9EDF2);fontStyle=1;" value="&lt;b&gt;BorrowRequest&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.333599999999997" width="238.9968" as="geometry" />
+        </mxCell>
+        <mxCell id="BorrowRequest-part-1" parent="BorrowRequest" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;- requestId : String {stable key}&lt;br&gt;- inventoryId : String&lt;br&gt;- reader : Reader&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82.00079999999998" width="238.9968" y="27.333599999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="BorrowRequest-part-2" parent="BorrowRequest" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 140%;&quot;&gt;+ equals(Object) : boolean&lt;br&gt;+ hashCode() : int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54.667199999999994" width="238.9968" y="109.33439999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="PriorityTaskDispatcher" parent="1" style="group;fontColor=light-dark(#000000,#000000);" value="" vertex="1">
+          <mxGeometry height="218.0016" width="363.00239999999997" x="659.9988000000001" y="1033.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="PriorityTaskDispatcher-part-0" parent="PriorityTaskDispatcher" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=center;verticalAlign=middle;fillColor=light-dark(#FFFFFF,#E9EDF2);fontStyle=1;" value="&lt;b&gt;PriorityTaskDispatcher&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.250200000000003" width="363.00239999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="PriorityTaskDispatcher-part-1" parent="PriorityTaskDispatcher" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;- tasks : Queue&amp;lt;ScheduledTask&amp;gt; = PriorityQueue&lt;br&gt;- pending : Set&amp;lt;LibraryTask&amp;gt; = HashSet&lt;br&gt;- nextSequence : long&lt;/div&gt;" vertex="1">
+          <mxGeometry height="81.7506" width="363.00239999999997" y="27.250200000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="PriorityTaskDispatcher-part-2" parent="PriorityTaskDispatcher" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;+ offer(task) : void&lt;br&gt;+ dispatchNext(library, service) : String&lt;br&gt;+ getPendingTasks() : List&amp;lt;LibraryTask&amp;gt;&lt;br&gt;+ cancelForBook(id) : int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="109.00080000000001" width="363.00239999999997" y="109.00080000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="ScheduledTask" parent="1" style="group;fontColor=light-dark(#000000,#000000);" value="" vertex="1">
+          <mxGeometry height="110.0016" width="202.0032" x="740.4984" y="1347.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="ScheduledTask-part-0" parent="ScheduledTask" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=center;verticalAlign=middle;fillColor=light-dark(#E9EDF2,#E9EDF2);fontStyle=1;" value="&lt;b&gt;ScheduledTask&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.500399999999996" width="202.0032" as="geometry" />
+        </mxCell>
+        <mxCell id="ScheduledTask-part-1" parent="ScheduledTask" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;&amp;lt;&amp;lt;private nested class&amp;gt;&amp;gt;&lt;br&gt;- task : LibraryTask&lt;br&gt;- sequence : long&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82.5012" width="202.0032" y="27.500399999999996" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryTask" parent="1" style="group;fontColor=light-dark(#000000,#000000);" value="" vertex="1">
+          <mxGeometry height="218.0016" width="266.9976" x="708.0012" y="1543.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryTask-part-0" parent="LibraryTask" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=center;verticalAlign=middle;fillColor=light-dark(#E9EDF2,#E9EDF2);fontStyle=1;" value="&lt;b&gt;LibraryTask&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.250200000000003" width="266.9976" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryTask-part-1" parent="LibraryTask" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;- taskId : String {stable key}&lt;br&gt;- type : Type&lt;br&gt;- inventoryId : String&lt;br&gt;- priority : int {1..3}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="109.00080000000001" width="266.9976" y="27.250200000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryTask-part-2" parent="LibraryTask" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;+ execute(library, service) : boolean&lt;br&gt;+ equals(Object) : boolean&lt;br&gt;+ hashCode() : int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="81.7506" width="266.9976" y="136.251" as="geometry" />
+        </mxCell>
+        <mxCell id="BookFilter" parent="1" style="group;" value="" vertex="1">
+          <mxGeometry height="164.0016" width="369" x="483" y="459.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="BookFilter-part-0" parent="BookFilter" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=center;verticalAlign=middle;fillColor=light-dark(#E9EDF2,#E9EDF2);fontStyle=1;" value="&lt;b&gt;BookFilter&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.333599999999997" width="369" as="geometry" />
+        </mxCell>
+        <mxCell id="BookFilter-part-1" parent="BookFilter" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;&amp;lt;&amp;lt;utility&amp;gt;&amp;gt;&lt;br&gt;+ byTitle(books, text) : List&amp;lt;LibraryBook&amp;gt;&lt;br&gt;+ byAuthor(books, text) : List&amp;lt;LibraryBook&amp;gt;&lt;br&gt;+ publishedFrom(books, year) : List&amp;lt;LibraryBook&amp;gt;&lt;br&gt;+ availableForLoan(books) : List&amp;lt;LibraryBook&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="136.66799999999998" width="369" y="27.333599999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="BookComparators" parent="1" style="group;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="137.0016" width="363.00239999999997" x="887.9988000000001" y="473.4992" as="geometry" />
+        </mxCell>
+        <mxCell id="BookComparators-part-0" parent="BookComparators" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=center;verticalAlign=middle;fillColor=light-dark(#E9EDF2,#E9EDF2);fontStyle=1;" value="&lt;b&gt;BookComparators&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.40032" width="363.00239999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="BookComparators-part-1" parent="BookComparators" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 150%;&quot;&gt;&amp;lt;&amp;lt;utility&amp;gt;&amp;gt;&lt;br&gt;+ BY_TITLE : Comparator&amp;lt;LibraryBook&amp;gt;&lt;br&gt;+ BY_YEAR_NEWEST : Comparator&amp;lt;LibraryBook&amp;gt;&lt;br&gt;+ BY_AUTHOR_TITLE : Comparator&amp;lt;LibraryBook&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="109.60128" width="363.00239999999997" y="27.40032" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryCsvStore" parent="1" style="group;" value="" vertex="1">
+          <mxGeometry height="110.0016" width="298.00079999999997" x="1286.4996" y="486.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryCsvStore-part-0" parent="LibraryCsvStore" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=center;verticalAlign=middle;fillColor=light-dark(#E9EDF2,#E9EDF2);fontStyle=1;" value="&lt;b&gt;LibraryCsvStore&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.500399999999996" width="298.00079999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryCsvStore-part-1" parent="LibraryCsvStore" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 150%;&quot;&gt;+ load(path) : Library&lt;br&gt;+ save(library, path) : void&lt;br&gt;+ exportReports(library, directory) : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82.5012" width="298.00079999999997" y="27.500399999999996" as="geometry" />
+        </mxCell>
+        <mxCell id="CsvFile" parent="1" style="group;" value="" vertex="1">
+          <mxGeometry height="110.0016" width="255.0024" x="1307.9988" y="800.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="CsvFile-part-0" parent="CsvFile" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=center;verticalAlign=middle;fillColor=light-dark(#E9EDF2,#E9EDF2);fontStyle=1;" value="&lt;b&gt;CsvFile&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.500399999999996" width="255.0024" as="geometry" />
+        </mxCell>
+        <mxCell id="CsvFile-part-1" parent="CsvFile" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=light-dark(#000000,#000000);strokeColor=light-dark(#000000,#000000);strokeWidth=1;rounded=0;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;&amp;lt;&amp;lt;utility&amp;gt;&amp;gt;&lt;br&gt;+ read(path) : List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt;&lt;br&gt;+ writeAtomic(path, rows) : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82.5012" width="255.0024" y="27.500399999999996" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-0" edge="1" parent="1" source="LibraryApplication" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0;exitY=0.717059806956363;entryX=1;entryY=0.017539602708219394;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" target="LibraryService" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="638.23" y="324.0799999999999" />
+              <mxPoint x="464.5" y="406" />
+              <mxPoint x="461.69" y="407.72" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-0-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=10;fontColor=light-dark(#000000,#000000);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="role workflows" vertex="1">
+          <mxGeometry height="17" width="79.8" x="538.6" y="363.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1" edge="1" parent="1" source="LibraryApplication" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.1600403263757663;exitY=1;entryX=0.6519241192411923;entryY=0;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" target="BookFilter" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="770.23" y="374.6300000000001" />
+              <mxPoint x="745.18" y="415.21000000000004" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-2" edge="1" parent="1" source="LibraryApplication" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.8399596736242332;exitY=1;entryX=0.3687887463002998;entryY=0;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" target="BookComparators" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="969.84" y="379.6199999999999" />
+              <mxPoint x="998.52" y="426.04999999999995" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3" edge="1" parent="1" source="LibraryApplication" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=1;exitY=0.7191414260151773;entryX=0.2458396084842722;entryY=0;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" target="LibraryCsvStore" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1097.51" y="324.56999999999994" />
+              <mxPoint x="1268.5" y="406" />
+              <mxPoint x="1315.59" y="444.06999999999994" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=10;fontColor=light-dark(#000000,#000000);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="load / save" vertex="1">
+          <mxGeometry height="17" width="62.7" x="1196.15" y="363.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-4" edge="1" parent="1" source="LibraryService" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.9232170094663019;exitY=1;entryX=0.009233395406579822;entryY=0;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" target="Library" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="442.08" y="698.6700000000001" />
+              <mxPoint x="469.05" y="719.81" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-4-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=10;fontColor=light-dark(#000000,#000000);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="checks roles; CRUD" vertex="1">
+          <mxGeometry height="17" width="102.60000000000001" x="463.2" y="704.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-5" edge="1" parent="1" source="Library" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.22204162118196027;exitY=1;entryX=0.6823748845308971;entryY=0;exitPerimeter=0;entryPerimeter=0;startArrow=diamond;startFill=1;" target="BorrowRequestQueue" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="541.75" y="999.86" />
+              <mxPoint x="524.49" y="1024.58" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-5-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=10;fontColor=light-dark(#000000,#000000);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="owns" vertex="1">
+          <mxGeometry height="17" width="60" x="525.5" y="991.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-6" edge="1" parent="1" source="Library" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.779429942849804;exitY=1;entryX=0.2910757614825685;entryY=0;exitPerimeter=0;entryPerimeter=0;startArrow=diamond;startFill=1;" target="PriorityTaskDispatcher" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="738.51" y="995.24" />
+              <mxPoint x="752.39" y="1015.01" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=10;fontColor=light-dark(#000000,#000000);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="owns" vertex="1">
+          <mxGeometry height="17" width="60" x="724.5" y="991.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-7" edge="1" parent="1" source="BorrowRequestQueue" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.9812133427034578;exitY=0;entryX=1;entryY=0.9824603972917808;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" target="LibraryService" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="631.81" y="1039.26" />
+              <mxPoint x="641.5" y="1034" />
+              <mxPoint x="776.5" y="1005" />
+              <mxPoint x="808.5" y="965" />
+              <mxPoint x="808.5" y="747" />
+              <mxPoint x="464.5" y="678" />
+              <mxPoint x="461.69" y="676.28" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=10;fontColor=light-dark(#000000,#000000);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="issue" vertex="1">
+          <mxGeometry height="17" width="60" x="791.5" y="848" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-8" edge="1" parent="1" source="BorrowRequestQueue" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.5000000000000001;exitY=1;entryX=0.5;entryY=4.8780011903942235e-06;exitPerimeter=0;entryPerimeter=0;" target="BorrowRequest" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="442.5" y="1265.6399999999999" />
+              <mxPoint x="442.5" y="1294.85" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-8-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=10;fontColor=light-dark(#000000,#000000);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="FIFO poll()" vertex="1">
+          <mxGeometry height="17" width="62.7" x="437.15" y="1278.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-9" edge="1" parent="1" source="PriorityTaskDispatcher" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.49999999999999983;exitY=1;entryX=0.5000000000000003;entryY=0;exitPerimeter=0;entryPerimeter=0;startArrow=diamond;startFill=1;" target="ScheduledTask" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="841.5" y="1294.37" />
+              <mxPoint x="841.5" y="1323.75" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-9-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=10;fontColor=light-dark(#000000,#000000);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="priority then sequence" vertex="1">
+          <mxGeometry height="17" width="125.4" x="833.8" y="1278.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-10" edge="1" parent="1" source="ScheduledTask" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.5000000000000003;exitY=1;entryX=0.4999999999999999;entryY=0;exitPerimeter=0;entryPerimeter=0;" target="LibraryTask" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="841.5" y="1483.27" />
+              <mxPoint x="841.5" y="1514.13" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-11" edge="1" parent="1" source="LibraryTask" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.7885793729981091;exitY=0;entryX=1;entryY=0.9824603972917808;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" target="LibraryService" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="941.42" y="1511.77" />
+              <mxPoint x="960.5" y="1485" />
+              <mxPoint x="1040.5" y="1252" />
+              <mxPoint x="1040.5" y="1034" />
+              <mxPoint x="843.5" y="747" />
+              <mxPoint x="664.5" y="707" />
+              <mxPoint x="464.5" y="678" />
+              <mxPoint x="461.69" y="676.28" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-11-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=10;fontColor=light-dark(#000000,#000000);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="execute" vertex="1">
+          <mxGeometry height="17" width="60" x="1030" y="1135" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-12" edge="1" parent="1" source="LibraryCsvStore" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.27530261663727035;exitY=1;entryX=1;entryY=0.27023104417582255;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" target="Library" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1322.08" y="634.69" />
+              <mxPoint x="1268.5" y="678" />
+              <mxPoint x="994.5" y="747" />
+              <mxPoint x="895.21" y="777.38" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-12-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=10;fontColor=light-dark(#000000,#000000);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="isolated import / snapshot" vertex="1">
+          <mxGeometry height="17" width="148.20000000000002" x="1137.4" y="704.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-13" edge="1" parent="1" source="LibraryCsvStore" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.4999999999999997;exitY=1;entryX=0.4999999999999997;entryY=0;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" target="CsvFile" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1435.5" y="650.8699999999999" />
+              <mxPoint x="1435.5" y="732.6700000000001" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-13-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=10;fontColor=light-dark(#000000,#000000);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="UTF-8; atomic file replacement" vertex="1">
+          <mxGeometry height="17" width="171" x="1426" y="704.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GeiASTaARkoV0RM-ctik-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Text" vertex="1">
+          <mxGeometry height="30" width="60" x="613" y="1153" as="geometry" />
+        </mxCell>
+        <mxCell id="GeiASTaARkoV0RM-ctik-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="516" y="1022" as="geometry" />
+        </mxCell>
+        <mxCell id="GeiASTaARkoV0RM-ctik-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="745" y="1004" as="geometry" />
+        </mxCell>
+        <mxCell id="GeiASTaARkoV0RM-ctik-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);" value="0..*" vertex="1">
+          <mxGeometry height="30" width="60" x="437.15" y="1295.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GeiASTaARkoV0RM-ctik-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);" value="0..*" vertex="1">
+          <mxGeometry height="30" width="60" x="833.8" y="1325.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GeiASTaARkoV0RM-ctik-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="828" y="1517" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

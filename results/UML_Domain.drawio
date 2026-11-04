@@ -1,0 +1,234 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="domain" name="UML Domain">
+    <mxGraphModel dx="1198" dy="707" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1458" pageHeight="1461" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=20;fontColor=#000000;" value="LibraryBook SIW1&lt;br&gt;Domain relationships and JCF indexes" vertex="1">
+          <mxGeometry height="48" width="1378" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Library" parent="1" style="group;" value="" vertex="1">
+          <mxGeometry height="515.0016" width="393.9984" x="747.0008" y="91.99919999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="Library-part-0" parent="Library" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=center;verticalAlign=middle;fillColor=#E9EDF2;fontStyle=1;" value="&lt;b&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;Library&lt;/div&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.105347368421057" width="393.9984" as="geometry" />
+        </mxCell>
+        <mxCell id="Library-part-1" parent="Library" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=middle;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- books : List&amp;lt;LibraryBook&amp;gt;&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- booksById : Map&amp;lt;String, LibraryBook&amp;gt;&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- booksByCategory : Map&amp;lt;String, Set&amp;lt;LibraryBook&amp;gt;&amp;gt;&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- readersById : Map&amp;lt;String, Reader&amp;gt;&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- staffById : Map&amp;lt;String, Librarian&amp;gt;&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- fansByBook : Map&amp;lt;String, Set&amp;lt;String&amp;gt;&amp;gt;&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- activityLog : ActivityLog&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- borrowRequests : BorrowRequestQueue&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- taskDispatcher : PriorityTaskDispatcher&lt;/div&gt;" vertex="1">
+          <mxGeometry height="243.94812631578952" width="393.9984" y="27.105347368421057" as="geometry" />
+        </mxCell>
+        <mxCell id="Library-part-2" parent="Library" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ findBook(id) : LibraryBook&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ addBook(book) : void&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ updateBook(id, title, author, isbn, year) : void&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ removeBook(id) : boolean&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ registerReader(reader) : void&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ removeReader(id) : boolean&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ addFavorite(reader, bookId) : void&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ removeFavorite(reader, bookId) : void&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ checkConsistency() : boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="243.94812631578952" width="393.9984" y="271.0534736842106" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryBook" parent="1" style="group;" value="" vertex="1">
+          <mxGeometry height="299.0016" width="401.99760000000003" x="112.00119999999998" y="675.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryBook-part-0" parent="LibraryBook" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=center;verticalAlign=middle;fillColor=#E9EDF2;fontStyle=1;" value="&lt;b&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;LibraryBook&lt;/div&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.181963636363637" width="401.99760000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryBook-part-1" parent="LibraryBook" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=middle;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; implements Comparable&amp;lt;LibraryBook&amp;gt;&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- inventoryId : String {stable key}&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- title, author, isbn : String&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- publicationYear : int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="108.72785454545455" width="401.99760000000003" y="27.181963636363637" as="geometry" />
+        </mxCell>
+        <mxCell id="LibraryBook-part-2" parent="LibraryBook" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=middle;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ getLoanPeriodDays() : int {abstract}&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ getUsageRules() : String {abstract}&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ displayInfo() : void&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ equals(Object) : boolean {final}&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ hashCode() : int {final}&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ compareTo(LibraryBook) : int {final}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="163.09178181818183" width="401.99760000000003" y="135.9098181818182" as="geometry" />
+        </mxCell>
+        <mxCell id="CirculatingBook" parent="1" style="group;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="218.0016" width="249.9984" x="40.0008" y="1033.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="CirculatingBook-part-0" parent="CirculatingBook" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=center;verticalAlign=middle;fillColor=#E9EDF2;fontStyle=1;" value="&lt;b&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;CirculatingBook&lt;/div&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.250200000000003" width="249.9984" as="geometry" />
+        </mxCell>
+        <mxCell id="CirculatingBook-part-1" parent="CirculatingBook" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=middle;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- shelfCode, borrowerId : String&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- dueDate : LocalDate&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- renewed : boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="81.7506" width="249.9984" y="27.250200000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="CirculatingBook-part-2" parent="CirculatingBook" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=middle;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ borrowBook(readerId) : boolean&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ returnBook() : boolean&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ renewLoan() : boolean&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ isAvailable() : boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="109.00080000000001" width="249.9984" y="109.00080000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="ReferenceBook" parent="1" style="group;" value="" vertex="1">
+          <mxGeometry height="191.0016" width="271.0008" x="326.4996" y="1047.4992" as="geometry" />
+        </mxCell>
+        <mxCell id="ReferenceBook-part-0" parent="ReferenceBook" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=center;verticalAlign=middle;fillColor=#E9EDF2;fontStyle=1;" value="&lt;b&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;ReferenceBook&lt;/div&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.28594285714286" width="271.0008" as="geometry" />
+        </mxCell>
+        <mxCell id="ReferenceBook-part-1" parent="ReferenceBook" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=middle;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- subject, readingRoom : String&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- currentReaderId : String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54.57188571428572" width="271.0008" y="27.28594285714286" as="geometry" />
+        </mxCell>
+        <mxCell id="ReferenceBook-part-2" parent="ReferenceBook" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=middle;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ startReading(readerId) : boolean&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ finishReading() : boolean&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ isInUse() : boolean&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ matchesSubject(subject) : boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="109.14377142857144" width="271.0008" y="81.85782857142858" as="geometry" />
+        </mxCell>
+        <mxCell id="Reader" parent="1" style="group;" value="" vertex="1">
+          <mxGeometry height="191.0016" width="275.9976" x="594.0012" y="729.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="Reader-part-0" parent="Reader" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=center;verticalAlign=middle;fillColor=#E9EDF2;fontStyle=1;" value="&lt;b&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;Reader&lt;/div&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.28594285714286" width="275.9976" as="geometry" />
+        </mxCell>
+        <mxCell id="Reader-part-1" parent="Reader" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=middle;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- readerId : String {stable key}&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- fullName : String&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- favoriteBookIds : Set&amp;lt;String&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="81.85782857142857" width="275.9976" y="27.28594285714286" as="geometry" />
+        </mxCell>
+        <mxCell id="Reader-part-2" parent="Reader" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=middle;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ equals(Object) : boolean&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ hashCode() : int&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ getFavoriteBookIds() : Set&amp;lt;String&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="81.85782857142857" width="275.9976" y="109.14377142857143" as="geometry" />
+        </mxCell>
+        <mxCell id="Librarian" parent="1" style="group;" value="" vertex="1">
+          <mxGeometry height="137.0016" width="217.0008" x="906.4996" y="756.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="Librarian-part-0" parent="Librarian" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=center;verticalAlign=middle;fillColor=#E9EDF2;fontStyle=1;" value="&lt;b&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;Librarian&lt;/div&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.40032" width="217.0008" as="geometry" />
+        </mxCell>
+        <mxCell id="Librarian-part-1" parent="Librarian" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=middle;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- staffId : String {stable key}&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- fullName : String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54.80064" width="217.0008" y="27.40032" as="geometry" />
+        </mxCell>
+        <mxCell id="Librarian-part-2" parent="Librarian" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=middle;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ equals(Object) : boolean&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ hashCode() : int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54.80064" width="217.0008" y="82.20096000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="ActivityLog" parent="1" style="group;" value="" vertex="1">
+          <mxGeometry height="137.0016" width="257.9976" x="1160.0012" y="756.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="ActivityLog-part-0" parent="ActivityLog" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=center;verticalAlign=middle;fillColor=#E9EDF2;fontStyle=1;" value="&lt;b&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;ActivityLog&lt;/div&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.40032" width="257.9976" as="geometry" />
+        </mxCell>
+        <mxCell id="ActivityLog-part-1" parent="ActivityLog" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=middle;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- logId : String {stable runtime ID}&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;- entries : List&amp;lt;String&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54.80064" width="257.9976" y="27.40032" as="geometry" />
+        </mxCell>
+        <mxCell id="ActivityLog-part-2" parent="ActivityLog" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=middle;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;~ record(action) : void&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ getEntries() : List&amp;lt;String&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54.80064" width="257.9976" y="82.20096000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="Borrowable" parent="1" style="group;" value="" vertex="1">
+          <mxGeometry height="110.0016" width="249.9984" x="40.0008" y="1310.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="Borrowable-part-0" parent="Borrowable" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=center;verticalAlign=middle;fillColor=#E9EDF2;fontStyle=1;" value="&lt;b&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;Borrowable&lt;/div&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.500399999999996" width="249.9984" as="geometry" />
+        </mxCell>
+        <mxCell id="Borrowable-part-1" parent="Borrowable" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=middle;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ borrowBook(readerId) : boolean&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ returnBook() : boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82.5012" width="249.9984" y="27.500399999999996" as="geometry" />
+        </mxCell>
+        <mxCell id="InLibraryReadable" parent="1" style="group;" value="" vertex="1">
+          <mxGeometry height="110.0016" width="256.9968" x="333.5016" y="1310.9992" as="geometry" />
+        </mxCell>
+        <mxCell id="InLibraryReadable-part-0" parent="InLibraryReadable" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=center;verticalAlign=middle;fillColor=#E9EDF2;fontStyle=1;" value="&lt;b&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;InLibraryReadable&lt;/div&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="27.500399999999996" width="256.9968" as="geometry" />
+        </mxCell>
+        <mxCell id="InLibraryReadable-part-1" parent="InLibraryReadable" style="html=1;whiteSpace=wrap;fontFamily=DejaVu Sans;fontSize=14;fontColor=#000000;strokeColor=#000000;strokeWidth=1;rounded=0;opacity=100;fillOpacity=100;strokeOpacity=100;textOpacity=100;align=left;verticalAlign=middle;spacingTop=6;spacingLeft=6;spacingRight=4;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ startReading(readerId) : boolean&lt;/div&gt;&lt;div style=&quot;line-height:25px;color:#000000;&quot;&gt;+ finishReading() : boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82.5012" width="256.9968" y="27.500399999999996" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-0" edge="1" parent="1" source="Library" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0;exitY=0.8048922566454162;entryX=0.991868608170795;entryY=0;exitPerimeter=0;entryPerimeter=0;startArrow=diamond;startFill=0;" target="LibraryBook" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="663.72" y="561.05" />
+              <mxPoint x="582.48" y="622.07" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-0-count" connectable="0" parent="edge-0" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#000000;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.8" y="12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-0-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;fillColor=#FFFFFF;" value="aggregates / indexes" vertex="1">
+          <mxGeometry height="17" width="114" x="548" y="633.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1" edge="1" parent="1" source="Library" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.1945672875828936;exitY=1;entryX=0.6532984344791402;entryY=0;exitPerimeter=0;entryPerimeter=0;startArrow=diamond;startFill=0;" target="Reader" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="806" y="659.04" />
+              <mxPoint x="788.88" y="697.32" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-1-count" connectable="0" parent="edge-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#000000;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.8" y="12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-1-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;fillColor=#FFFFFF;" value="registers" vertex="1">
+          <mxGeometry height="17" width="60" x="804.5" y="633.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-2" edge="1" parent="1" source="Library" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.602665391534585;exitY=1;entryX=0.45322597889040056;entryY=0;exitPerimeter=0;entryPerimeter=0;startArrow=diamond;startFill=0;" target="Librarian" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="992.03" y="671.16" />
+              <mxPoint x="999.31" y="719.73" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-2-count" connectable="0" parent="edge-2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#000000;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.8" y="12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3" edge="1" parent="1" source="Library" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.9940629200524673;exitY=1;entryX=0.30891295112822803;entryY=0;exitPerimeter=0;entryPerimeter=0;startArrow=diamond;startFill=1;" target="ActivityLog" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1176.18" y="669.5" />
+              <mxPoint x="1212.29" y="719.1" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3-tail-count" connectable="0" parent="edge-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#000000;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.8" y="12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3-count" connectable="0" parent="edge-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#000000;labelBackgroundColor=#FFFFFF;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.8" y="12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;fillColor=#FFFFFF;" value="owns" vertex="1">
+          <mxGeometry height="17" width="60" x="1141" y="633.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-4" edge="1" parent="1" source="LibraryBook" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.314750137811768;exitY=1;entryX=0.7030412994643165;entryY=0;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=0;" target="CirculatingBook" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230.82" y="1001.6800000000001" />
+              <mxPoint x="223.12" y="1018.1" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-5" edge="1" parent="1" source="LibraryBook" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.6863443960859468;exitY=1;entryX=0.33505583747354256;entryY=0;exitPerimeter=0;entryPerimeter=0;startArrow=block;startFill=0;" target="ReferenceBook" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="397.96" y="1006.4" />
+              <mxPoint x="408" y="1027.66" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6" edge="1" parent="1" source="CirculatingBook" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=block;endFill=0;" target="Borrowable" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="165" y="1268.44" />
+              <mxPoint x="165" y="1284.72" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7" edge="1" parent="1" source="ReferenceBook" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;dashed=1;endArrow=block;endFill=0;" target="InLibraryReadable" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="462" y="1259.35" />
+              <mxPoint x="462" y="1280.77" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-8" edge="1" parent="1" source="Reader" style="edgeStyle=none;html=1;rounded=0;strokeColor=#374151;strokeWidth=1;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;endArrow=none;startArrow=none;exitX=0;exitY=0.5000000000000001;entryX=1;entryY=0.5000000000000001;exitPerimeter=0;entryPerimeter=0;" target="LibraryBook" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="568.33" y="825.5" />
+              <mxPoint x="541.1800000000001" y="825.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-8-tail-count" connectable="0" parent="edge-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#000000;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.8" y="12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-8-count" connectable="0" parent="edge-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontColor=#000000;labelBackgroundColor=#FFFFFF;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.8" y="12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-8-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=DejaVu Sans;fontSize=10;fontColor=#000000;fillColor=#FFFFFF;" value="favorites" vertex="1">
+          <mxGeometry height="17" width="60" x="524" y="809" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

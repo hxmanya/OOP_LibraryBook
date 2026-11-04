@@ -1,0 +1,17 @@
+recordType,id,kind,name,author,isbn,year,location,subject,readerId,dueDate,renewed,priority,details
+LIBRARY,University Library,,,,,,,,,,,,
+READER,READER-001,,Esenaliev Aman,,,,,,,,,,
+READER,READER-002,,Aida Sadykova,,,,,,,,,,
+STAFF,STAFF-001,,Aigerim Asanova,,,,,,,,,,
+BOOK,C001,CIRCULATING,1984,George Orwell,9780451524935,1949,A-01,,READER-001,2026-11-18,false,,
+BOOK,C002,CIRCULATING,The Hobbit,J.R.R. Tolkien,9780547928227,1937,A-02,,,,false,,
+BOOK,C003,CIRCULATING,Clean Code,Robert C. Martin,9780132350884,2008,B-01,,,,false,,
+BOOK,C004,CIRCULATING,Effective Java,Joshua Bloch,9780134685991,2018,B-02,,,,false,,
+BOOK,R001,REFERENCE,Oxford Dictionary of English,Angus Stevenson,9780199571123,2010,Room 1,English language,,,,,
+BOOK,R002,REFERENCE,"Java, The Complete Reference",Herbert Schildt,9781260440232,2018,Room 2,Programming,,,,,
+HISTORY,1,,,,,,,,,,,,2026-11-04T09:47:06.846882100Z | Loaded input CSV input_state.csv
+HISTORY,2,,,,,,,,,,,,2026-11-04T09:49:06.216412100Z | Request submitted REQ-dd756bca-ad8a-4e12-b19d-2e9eca426a82 by READER-001
+HISTORY,3,,,,,,,,,,,,2026-11-04T09:50:01.828129600Z | Borrowed C001 by READER-001
+HISTORY,4,,,,,,,,,,,,2026-11-04T09:50:01.828129600Z | Staff STAFF-001 processed REQ-dd756bca-ad8a-4e12-b19d-2e9eca426a82 | READER-001 | C001 | ISSUED
+HISTORY,5,,,,,,,,,,,,2026-11-04T09:50:26.821190700Z | Request submitted REQ-bb13e4ee-92e2-40bd-aed8-ee20450c9359 by READER-002
+HISTORY,6,,,,,,,,,,,,2026-11-04T09:50:49.527192100Z | Staff STAFF-001 processed REQ-bb13e4ee-92e2-40bd-aed8-ee20450c9359 | READER-002 | C001 | UNAVAILABLE

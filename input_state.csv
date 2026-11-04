@@ -1,0 +1,11 @@
+recordType,id,kind,name,author,isbn,year,location,subject,readerId,dueDate,renewed,priority,details
+LIBRARY,University Library,,,,,,,,,,,,
+STAFF,STAFF-001,,Aigerim Asanova,,,,,,,,,,
+READER,READER-001,,Esenaliev Aman,,,,,,,,,,
+READER,READER-002,,Aida Sadykova,,,,,,,,,,
+BOOK,C001,CIRCULATING,1984,George Orwell,9780451524935,1949,A-01,,,,false,,
+BOOK,C002,CIRCULATING,The Hobbit,J.R.R. Tolkien,9780547928227,1937,A-02,,,,false,,
+BOOK,C003,CIRCULATING,Clean Code,Robert C. Martin,9780132350884,2008,B-01,,,,false,,
+BOOK,C004,CIRCULATING,Effective Java,Joshua Bloch,9780134685991,2018,B-02,,,,false,,
+BOOK,R001,REFERENCE,Oxford Dictionary of English,Angus Stevenson,9780199571123,2010,Room 1,English language,,,,,
+BOOK,R002,REFERENCE,"Java, The Complete Reference",Herbert Schildt,9781260440232,2018,Room 2,Programming,,,,,

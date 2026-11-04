@@ -1,0 +1,7 @@
+inventoryId,type,title,author,year,status,readerId,dueDate,favoriteCount
+C001,CirculatingBook,1984,George Orwell,1949,ON_LOAN,READER-001,2026-11-18,0
+C003,CirculatingBook,Clean Code,Robert C. Martin,2008,AVAILABLE,,,0
+C004,CirculatingBook,Effective Java,Joshua Bloch,2018,AVAILABLE,,,0
+R002,ReferenceBook,"Java, The Complete Reference",Herbert Schildt,2018,AVAILABLE,,,0
+R001,ReferenceBook,Oxford Dictionary of English,Angus Stevenson,2010,AVAILABLE,,,0
+C002,CirculatingBook,The Hobbit,J.R.R. Tolkien,1937,AVAILABLE,,,0
